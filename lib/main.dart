@@ -2,7 +2,7 @@ import 'package:chat_app/cubit/auth_cubit.dart';
 import 'package:chat_app/cubit/user_cubit.dart';
 import 'package:chat_app/data/repository/chat_repository.dart';
 import 'package:chat_app/firebase_options.dart';
-import 'package:chat_app/services/firebase_services.dart';
+import 'package:chat_app/data/services/firebase_services.dart';
 import 'package:chat_app/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:chat_app/services/firebase_services.dart';
+import 'package:chat_app/data/services/firebase_services.dart';
 
 class AuthState {}
 

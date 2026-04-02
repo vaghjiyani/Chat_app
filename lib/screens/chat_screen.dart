@@ -138,7 +138,7 @@ class _ChatScreenState extends State<ChatScreen> {
           if (state is ChatError) {
             return Text(state.message);
           }
-          return Center(child: Text("this is empty"));
+          return Center(child: Text("let's chat hear"));
         },
       ),
     );
