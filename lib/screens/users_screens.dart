@@ -52,14 +52,12 @@ class _UsersScreensState extends State<UsersScreens> {
 
             return ListView.builder(
               itemCount: user.length,
-
               itemBuilder: (context, index) {
                 final userData = user[index];
                 return Card(
                   elevation: 5,
                   child: ListTile(
                     title: Text(userData.name),
-
                     onTap: () {
                       final currentUid = FirebaseAuth.instance.currentUser!.uid;
                       final otherUid = userData.uid;

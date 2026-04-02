@@ -32,8 +32,9 @@ class AuthCubit extends Cubit<AuthState> {
   Future<void> register(String email, String password, String name) async {
     emit(AuthLoading());
     try {
-      await firebaseServices.register(email, password, name);
+      final result = await firebaseServices.register(email, password, name);
       emit(AuthSuccess());
+      print(result);
     } catch (e) {
       emit(AuthError(e.toString()));
     }
